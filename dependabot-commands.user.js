@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name        Dependabot commands - github.com
+// @icon        https://avatars.githubusercontent.com/u/27347476?s=200&v=4
 // @namespace   Violentmonkey Scripts
 // @match       https://github.com/*
 // @grant       none
-// @version     1.0
-// @author      -
+// @version     1.1
+// @author      Dante Catalfamo <dante@lambda.cx>
 // @description Adds shortcut buttons to run dependabot commands in PRs where dependabot is the author
 // ==/UserScript==
 
@@ -63,4 +64,4 @@ function maybeAddDependabotButtons() {
 }
 
 document.addEventListener('pjax:complete', maybeAddDependabotButtons);
-window.addEventListener('load', maybeAddDependabotButtons);
+maybeAddDependabotButtons();
