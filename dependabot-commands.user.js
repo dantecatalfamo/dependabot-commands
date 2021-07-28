@@ -4,9 +4,10 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://github.com/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Dante Catalfamo <dante@lambda.cx>
 // @description Adds shortcut buttons to run dependabot commands in PRs where dependabot is the author
+// @downloadURL https://gist.github.com/dantecatalfamo/f53aa60d13b3882f0fc5db92401227dc/raw/25a6c044fa29ef5652a098a1ab59efbc1c4ca4fd/dependabot-commands.user.js
 // ==/UserScript==
 
 const commands = ['rebase', 'recreate', 'merge', 'close'];
