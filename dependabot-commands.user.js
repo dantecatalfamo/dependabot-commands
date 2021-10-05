@@ -4,7 +4,7 @@
 // @namespace   Violentmonkey Scripts
 // @match       https://github.com/*
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @author      Dante Catalfamo <dante@lambda.cx>
 // @license     BSD-3-Clause; https://opensource.org/licenses/BSD-3-Clause
 // @description Adds shortcut buttons to run dependabot commands in PRs where dependabot is the author
