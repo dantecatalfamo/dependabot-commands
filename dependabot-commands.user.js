@@ -7,14 +7,14 @@
 // @version     1.2
 // @author      Dante Catalfamo <dante@lambda.cx>
 // @description Adds shortcut buttons to run dependabot commands in PRs where dependabot is the author
-// @downloadURL https://gist.github.com/dantecatalfamo/f53aa60d13b3882f0fc5db92401227dc/raw/dependabot-commands.user.js
+// @downloadURL https://github.com/dantecatalfamo/dependabot-commands/raw/master/dependabot-commands.user.js
 // ==/UserScript==
 
 const commands = ['rebase', 'recreate', 'merge', 'close'];
 
 function submitComment(text) {
   const inputCommentElement = document.getElementById('new_comment_field');
-  const submitCommentElement = document.querySelector('#partial-new-comment-form-actions button.btn-primary')
+  const submitCommentElement = document.querySelector('#partial-new-comment-form-actions button.btn-primary');
 
   inputCommentElement.value = text;
   submitCommentElement.disabled = false;
@@ -28,23 +28,23 @@ function dependabotCommand(command) {
 function createDependabotButton(command) {
   const div = document.createElement('div');
   div.classList = 'color-bg-secondary';
-  
+
   const btn = document.createElement('button');
   btn.classList = 'btn';
   btn.type = 'button';
-  btn.innerText = `@db ${command}`
+  btn.innerText = `@db ${command}`;
   btn.addEventListener('click', function() {
     dependabotCommand(command);
   });
-  
+
   div.appendChild(btn);
   return div;
 }
 
 function addDependabotButton(command) {
-  const buttonContainerElement = document.querySelector('#partial-new-comment-form-actions .d-flex')
+  const buttonContainerElement = document.querySelector('#partial-new-comment-form-actions .d-flex');
   const div = createDependabotButton(command);
-  
+
   buttonContainerElement.lastElementChild.before(div);
 }
 
@@ -55,7 +55,7 @@ function addDependabotButtons() {
 }
 
 function isDependabot() {
-  return document.querySelector('.TimelineItem .author').innerText === 'dependabot'
+  return document.querySelector('.TimelineItem .author').innerText === 'dependabot';
 }
 
 function maybeAddDependabotButtons() {
