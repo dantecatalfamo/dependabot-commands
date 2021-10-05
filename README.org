@@ -1,7 +1,7 @@
 * Dependabot Commands
   A small userscript to make dealing with dependabot less painful.
 
-  Adds buttons that will submit dependabit command comments with a
+  Adds buttons that will submit dependabot command comments with a
   single click.
 
   Only appears on pull requests that are opened by dependabot.
