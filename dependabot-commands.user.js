@@ -6,6 +6,7 @@
 // @grant       none
 // @version     1.2
 // @author      Dante Catalfamo <dante@lambda.cx>
+// @license     BSD-3-Clause; https://opensource.org/licenses/BSD-3-Clause
 // @description Adds shortcut buttons to run dependabot commands in PRs where dependabot is the author
 // @downloadURL https://github.com/dantecatalfamo/dependabot-commands/raw/master/dependabot-commands.user.js
 // ==/UserScript==
