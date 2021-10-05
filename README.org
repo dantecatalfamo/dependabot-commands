@@ -6,4 +6,9 @@
 
   Only appears on pull requests that are opened by dependabot.
 
+  Requires a userscript manager like [[https://violentmonkey.github.io/][Violentmonkey]] or [[https://www.greasespot.net/][Greasemonkey]] to
+  be installed in your browser.
+
+  Click [[https://github.com/dantecatalfamo/dependabot-commands/raw/master/dependabot-commands.user.js][here]] to add the script.
+
   [[file:dependabot-userscript.png]]
